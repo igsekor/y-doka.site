@@ -8,7 +8,7 @@ eleventyNavigation:
 <div class="container">
   <h2 class="navpage__title">HTML</h2>
   <div class="navpage__block">
-    <div class="navpage__column">
+    <section class="navpage__section">
       <h3 class="navpage__subtitle">Справочник</h3>
       <ul class="navpage__list">
         {%- for htmlDoka in collections.htmlDoka -%}
@@ -17,8 +17,8 @@ eleventyNavigation:
         </a>
         {%- endfor -%}
       </ul>
-    </div>
-    <div class="navpage__column">
+    </section>
+    <section class="navpage__section">
       <h3 class="navpage__subtitle">Лонгриды</h3>
       <ul class="navpage__list">
         {%- for htmlLong in collections.htmlLong -%}
@@ -27,6 +27,6 @@ eleventyNavigation:
         </a>
         {%- endfor -%}
       </ul>
-    </div>
+    </section>
   </div>
 </div>

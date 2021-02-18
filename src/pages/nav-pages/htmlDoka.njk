@@ -9,7 +9,7 @@ eleventyNavigation:
   <h2 class="navpage__title">HTML</h2>
   <h3 class="navpage__subtitle">Справочник</h3>
   <div class="navpage__block">
-    <div class="navpage__column">
+    <section class="navpage__section">
       <ul class="navpage__list">
         {%- for htmlDoka in collections.htmlDoka -%}
         <a href="/{{ htmlDoka.data.section }}/{{ htmlDoka.data.type }}/{{ htmlDoka.data.name }}">
@@ -17,6 +17,6 @@ eleventyNavigation:
         </a>
         {%- endfor -%}
       </ul>
-    </div>
+    </section>
   </div>
 </div>

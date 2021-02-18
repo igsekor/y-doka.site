@@ -8,7 +8,8 @@ eleventyNavigation:
 <div class="container">
   <h2 class="navpage__title">JavaScript</h2>
   <div class="navpage__block">
-    <div class="navpage__column">
+    <section class="navpage__section">
+
       <h3 class="navpage__subtitle">Справочник</h3>
       <ul class="navpage__list">
         {%- for jsDoka in collections.jsDoka -%}
@@ -17,8 +18,9 @@ eleventyNavigation:
         </a>
         {%- endfor -%}
       </ul>
-    </div>
-    <div class="navpage__column">
+
+    </section>
+    <section class="navpage__section">
       <h3 class="navpage__subtitle">Лонгриды</h3>
       <ul class="navpage__list">
         {%- for jsLong in collections.jsLong -%}
@@ -27,8 +29,9 @@ eleventyNavigation:
         </a>
         {%- endfor -%}
       </ul>
-    </div>
-    <div class="navpage__column">
+
+    </section>
+    <section class="navpage__section">
       <h3 class="navpage__subtitle">Инструменты</h3>
       <ul class="navpage__list">
         {%- for postTools in collections.jsTools -%}
@@ -37,6 +40,6 @@ eleventyNavigation:
         </a>
         {%- endfor -%}
       </ul>
-    </div>
+    </section>
   </div>
 </div>

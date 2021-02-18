@@ -9,7 +9,8 @@ eleventyNavigation:
   <h2 class="navpage__title">HTML</h2>
   <h3 class="navpage__subtitle">Лонгриды</h3>
   <div class="navpage__block">
-    <div class="navpage__column">
+    <section class="navpage__section">
+      {% if collections.htmlLong | length %}
       <ul class="navpage__list">
         {%- for htmlLong in collections.htmlLong -%}
         <a href="/{{ htmlLong.data.section }}/{{ htmlLong.data.type }}/{{ htmlLong.data.name }}">
@@ -17,6 +18,7 @@ eleventyNavigation:
         </a>
         {%- endfor -%}
       </ul>
-    </div>
+      {%- endif -%}
+    </section>
   </div>
 </div>

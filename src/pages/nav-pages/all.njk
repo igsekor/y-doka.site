@@ -7,7 +7,7 @@ eleventyNavigation:
 
 <div class="container">
   <div class="navpage__block">
-    <div class="navpage__column">
+    <section class="navpage__section">
       <h2 class="navpage__title">HTML</h2>
       <h3 class="navpage__subtitle">Справочник</h3>
       <ul class="navpage__list">
@@ -19,6 +19,7 @@ eleventyNavigation:
         </li>
         {%- endfor -%}
       </ul>
+      {% if collections.htmlLong | length %}
       <h3 class="navpage__subtitle">Лонгриды</h3>
       <ul class="navpage__list">
         {%- for htmlLong in collections.htmlLong -%}
@@ -29,8 +30,9 @@ eleventyNavigation:
         </li>
         {%- endfor -%}
       </ul>
-    </div>
-    <div class="navpage__column">
+      {%- endif -%}
+    </section>
+    <section class="navpage__section">
       <h2 class="navpage__title">CSS</h2>
       <h3 class="navpage__subtitle">Справочник</h3>
       <ul class="navpage__list">
@@ -52,8 +54,8 @@ eleventyNavigation:
         </li>
         {%- endfor -%}
       </ul>
-    </div>
-    <div class="navpage__column">
+    </section>
+    <section class="navpage__section">
       <h2 class="navpage__title">JavaScript</h2>
       <h3>Справочник</h3>
       <ul class="navpage__list">
@@ -85,6 +87,6 @@ eleventyNavigation:
         </li>
         {%- endfor -%}
       </ul>
-    </div>
+    </section>
   </div>
 </div>
