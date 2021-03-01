@@ -9,6 +9,10 @@ summary:
   - :focus
   - LVHA
   - псевдокласс
+cover:
+  video:
+    src: '/assets/video/posts/focus/cover/cover.mp4'
+    poster: '/assets/video/posts/focus/cover/cover.png'
 ---
 
 ## Кратко
