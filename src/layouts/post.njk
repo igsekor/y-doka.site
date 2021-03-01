@@ -4,7 +4,7 @@ layout: base
 <article class="article">
   {% if cover %}
     {% if cover.video %}
-    <video autoplay muted loop width="900" height="537" src="{{ cover.video.src }}" src="{{ cover.video.poster }}" class="article__cover-video">
+    <video class="article__cover-media" autoplay muted loop width="900" height="537" src="{{ cover.video.src }}" poster="{{ cover.video.poster }}">
       Простите, но ваш браузер не поддерживает встроенные видео. Попробуйте скачать его <a href="{{ cover.video.src }}">по этой ссылке</a> и открыть его на своём устройстве.
     </video>
     {% elif cover.picture %}
