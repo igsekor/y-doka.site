@@ -3,12 +3,14 @@ layout: base
 ---
 <article class="article">
   {% if cover %}
-  <picture>
-    {% if cover.mobile %}
-    <source srcset="{{ cover.mobile }}" media="(max-width: 425px)">
+    {% if cover.picture %}
+    <picture>
+      {% if cover.picture.mobile %}
+      <source srcset="{{ cover.picture.mobile }}" media="(max-width: 425px)">
+      {% endif%}
+      <img src="{{ cover.picture.desktop }}" width="900" height="537" class="article__cover-image" alt="{{ cover.picture.alt }}">
+    </picture>
     {% endif%}
-    <img src="{{ cover.desktop }}" width="900" height="537" class="article__cover-image" alt="{{ cover.alt }}">
-  </picture>
   {% endif%}
   <div class="article__title">
     <h1>{{ title }}</h1>

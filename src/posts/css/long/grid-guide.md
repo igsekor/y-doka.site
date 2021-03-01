@@ -48,7 +48,8 @@ summary:
   - min-content
   - max-content
 cover:
-  desktop: '/assets/images/posts/grid-guide/cover.png'
+  picture:
+    desktop: '/assets/images/posts/grid-guide/cover.png'
 ---
 
 ## Что это?

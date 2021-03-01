@@ -9,7 +9,8 @@ summary:
   - reference
   - value
 cover:
-  desktop: '/assets/images/posts/ref-type-vs-value-type/cover.png'
+  picture:
+    desktop: '/assets/images/posts/ref-type-vs-value-type/cover.png'
 ---
 
 ## Кратко

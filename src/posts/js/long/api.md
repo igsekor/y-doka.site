@@ -16,7 +16,8 @@ summary:
   - soap
   - rpc
 cover:
-  desktop: '/assets/images/posts/js/api/cover.png'
+  picture:
+    desktop: '/assets/images/posts/js/api/cover.png'
 ---
 
 ## Кратко

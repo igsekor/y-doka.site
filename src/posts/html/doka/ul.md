@@ -11,7 +11,8 @@ summary:
   - ul
   - <ul>
 cover:
-  desktop: '/assets/images/posts/ul/cover.png'
+  picture:
+    desktop: '/assets/images/posts/ul/cover.png'
 ---
 
 ## Кратко

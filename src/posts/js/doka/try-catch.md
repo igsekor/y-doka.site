@@ -9,7 +9,8 @@ summary:
   - ошибки
   - errors
 cover:
-  desktop: '/assets/images/posts/js/try-catch/cover.png'
+  picture:
+    desktop: '/assets/images/posts/js/try-catch/cover.png'
 ---
 
 ## Кратко

@@ -31,7 +31,8 @@ summary:
   - flex-flow
   - align-content
 cover:
-  desktop: '/assets/images/posts/flexbox-guide/cover.png'
+  picture:
+    desktop: '/assets/images/posts/flexbox-guide/cover.png'
 ---
 
 ## Что это?
