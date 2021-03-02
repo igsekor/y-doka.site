@@ -2,9 +2,6 @@
 title: "autocomplete"
 name: autocomplete
 author: Lena Ryan
-co-authors:
-designers:
-contributors:
 summary:
   - атрибут
   - autocomplete
