@@ -13,7 +13,7 @@
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 42px;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
@@ -30,8 +30,8 @@ p {
 
 header {
   padding: 80px 50px;
-  background-color: #ffd829;
   color: #000000;
+  background-color: #ffd829;
 }
 
 article {
