@@ -18,6 +18,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 
   &__section {
