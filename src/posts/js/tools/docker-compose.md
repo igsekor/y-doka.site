@@ -45,6 +45,41 @@ Docker Compose поддерживает файлы конфигурации в �
 
 ![Конфигурация мультиконтейнерного приложения для сайта на движке Wordpress](/assets/images/posts/js/docker-compose/docker-compose-config.png)
 
+<details>
+  <summary>Конфигурация для сайта на движке Wordpress (compose.yaml)</summary>
+
+  ```
+  version: "3.9"
+
+  services:
+    db:
+      image: mysql:5.7
+      volumes:
+        - db_data:/var/lib/mysql
+      restart: always
+      environment:
+        MYSQL_ROOT_PASSWORD: goodpassword
+        MYSQL_DATABASE: wordpress
+        MYSQL_USER: wordpress
+        MYSQL_PASSWORD: wordpress
+
+    wordpress:
+      depends_on:
+        - db
+      image: wordpress:latest
+      ports:
+        - "8000:80"
+      restart: always
+      environment:
+        WORDPRESS_DB_HOST: db:3306
+        WORDPRESS_DB_USER: wordpress
+        WORDPRESS_DB_PASSWORD: wordpress
+        WORDPRESS_DB_NAME: wordpress
+  volumes:
+    db_data: {}
+  ```
+</details>
+
 В первой строчке этого файла конфигурации содержится информация о версии. С каждой новой версией формата описания функционал Docker Compose расширяется. Если раньше этот параметр был обязательным, то сейчас его можно не указывать, если не нужно поддерживать старую версию Docker Engine. Таблицу соответствия версий формата описания и движка Docker вы можете посмотреть [тут](https://docs.docker.com/compose/compose-file/#compose-and-docker-compatibility-matrix).
 
 В разделе `services` содержится описание всех контейнеров, запуск которых нужно настроить. Отдельно работающие приложения или службы в терминах Docker Compose называются сервисами.
